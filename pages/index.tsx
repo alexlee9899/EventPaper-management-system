@@ -23,13 +23,19 @@ import prisma from '../lib/prisma';
 // }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const posts = await prisma.post.findMany({
+  const feed = await prisma.post.findMany({
     where: { published: true },
-    include: { author: { select: { name: true } } },
+    include: {
+      author: {
+        select: { name: true },
+      },
+    },
   });
-  return { props: { posts }, revalidate: 10 };
+  return {
+    props: { feed },
+    revalidate: 10,
+  };
 };
-
 
 type Props = {
   feed: PostProps[]
