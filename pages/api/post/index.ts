@@ -1,4 +1,6 @@
 import { getSession } from 'next-auth/react';
+import { getServerSession } from 'next-auth/next';
+import { options } from '../auth/[...nextauth]';
 import prisma from '../../../lib/prisma';
 
 // POST /api/post
@@ -6,8 +8,7 @@ import prisma from '../../../lib/prisma';
 // Optional fields in body: content
 export default async function handle(req, res) {
     const { title, content } = req.body;
-
-    const session = await getSession({ req });
+    const session: any = await getServerSession(req, res, options);
     const result = await prisma.post.create({
         data: {
             title: title,
