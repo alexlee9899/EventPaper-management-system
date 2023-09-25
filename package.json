@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "prisma generate && next build",
     "start": "next start"
   },
