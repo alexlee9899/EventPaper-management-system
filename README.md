@@ -77,6 +77,7 @@ CI/CD Workflow:
 Every push to the repository automatically triggers a build and deployment process on Vercel.
 File Structure
 plaintext
+
 Copy code
 ├── components/           # Reusable UI components
 ├── pages/                # Next.js pages
@@ -89,3 +90,15 @@ Copy code
 ├── .prettierrc           # Prettier configuration
 ├── next.config.js        # Next.js configuration
 ├── package.json          # Project dependencies and scripts
+
+
+Future Improvements
+Add more authentication providers (e.g., Facebook, GitHub).
+Enhance the admin dashboard with analytics and user statistics.
+Extend database integrations for complex event relationships.
+Introduce testing frameworks like Jest for automated testing.
+Contributing
+Contributions are welcome! Please fork the repository and submit a pull request for any improvements or features you’d like to add.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
