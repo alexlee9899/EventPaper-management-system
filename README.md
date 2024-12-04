@@ -18,23 +18,31 @@ Deployment:
 Deployed on Vercel with a CI/CD pipeline, ensuring smooth updates and streamlined deployment.
 TypeScript and JavaScript:
 A mix of TypeScript and JavaScript to demonstrate flexibility in development.
+
 Clear Structure:
 The project is structured with clarity, making it easy to navigate and extend.
 Technologies Used
+
 Frontend:
 Next.js: React-based framework for building web applications.
 Tailwind CSS: Utility-first CSS framework for rapid UI development.
 Authentication:
+
 NextAuth.js: For Google-based user authentication and session management.
 Backend:
 Next.js API Routes for handling server-side logic and CRUD operations.
+
 Database:
 Example integration with Prisma for database management (can be extended as needed).
 Deployment:
 Vercel: Hosting platform with built-in CI/CD capabilities.
+
 Code Quality:
 Prettier: Code formatter for consistent styling.
+
+
 Setup Instructions
+
 Clone the Repository:
 
 bash
